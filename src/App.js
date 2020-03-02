@@ -19,7 +19,6 @@ class App extends Component {
         fname: '',
         phone: '',
         felial: '',
-        dateDate: new Date(),
         section: '',
         doctor: '',
         type: '',
@@ -27,52 +26,46 @@ class App extends Component {
         calendarEvents: [
             {
                 title: 'Запись занята',
-                 start: '2020-03-02 08:00',
-                 end: '2020-03-02 08:15',
-                 backgroundColor: '#800000'
-             },
-             {
-                 title: 'Запись занята',
-                 start: '2020-03-02 08:15',
-                 end: '2020-03-02 08:30',
-                 backgroundColor: '#800000'
-             }, {
-                 title: 'Запись занята',
-                 start: '2020-03-02 10:00',
-                 end: '2020-03-02 10:15',
-                 backgroundColor: '#800000'
-             }, {
-                 title: 'Запись занята',
-                 start: '2020-03-02 12:30',
-                 end: '2020-03-02 12:45',
-                 backgroundColor: '#800000'
+                start: '2020-03-02 08:00',
+                end: '2020-03-02 08:15',
+                backgroundColor: '#800000'
+            },
+            {
+                title: 'Запись занята',
+                start: '2020-03-02 08:15',
+                end: '2020-03-02 08:30',
+                backgroundColor: '#800000'
+            }, {
+                title: 'Запись занята',
+                start: '2020-03-02 10:00',
+                end: '2020-03-02 10:15',
+                backgroundColor: '#800000'
+            }, {
+                title: 'Запись занята',
+                start: '2020-03-02 12:30',
+                end: '2020-03-02 12:45',
+                backgroundColor: '#800000'
             }
         ]
     };
 
-    calendarComponentRef = React.createRef();
-
+    calendarComponentRef = React.createRef();  //Без поятия для чего это, брал их твоего примера, так то можно удалять наверно
+    reg = this.state.calendarEvents;//Передаю стейт массив записей
+    //Фунация выпоняемя при клике на дату в календаре
     handleDateClick = (arg) => {
-        console.log(this.state)
+        const CorrDate = moment(arg.date).add(15, 'minutes');//Берется выбранная дата и прибавляется к ней 15 минут, для обозначения интервала
+        //console.log(this.state);
+        this.setState //Берется предидущий стейт массив и добавляется к нему новая запись
+        (
+            {
+                calendarEvents: [
+                    ...this.reg,
+                    {title: 'Новая запись', start: arg.date, end: CorrDate._d}
+                ]
+            }
+            )
 
-        const CorrDate = moment(arg.date).add(15, 'minutes');
-        // this.setState({calendarEvents: [{title: 'Запись занята', start: arg.date, end: CorrDate._d}]});
 
-        let reg = this.state.calendarEvents;
-        //console.log(reg);
-        // eslint-disable-next-line no-undef
-       //let ForData =  arg.date.getFullYear() + '-' + (arg.date.getDate() < 10 ? '0' + arg.date.getDate() : arg.date.getDate()) + '-' +(arg.date.getMonth() < 9 ? '0' + (arg.date.getMonth() + 1) : arg.date.getMonth()+1) + ' ' + (arg.date.getHours() < 10 ? '0' + arg.date.getHours() : arg.date.getHours())+ ':' + (arg.date.getMinutes() < 10 ? '0' + arg.date.getMinutes() : arg.date.getMinutes());
-      // let ForCorData = CorrDate._d.getFullYear() + '-' + (CorrDate._d.getDate() < 10 ? '0' + CorrDate._d.getDate() : CorrDate._d.getDate()) + '-' +(CorrDate._d.getMonth() < 9 ? '0' + (CorrDate._d.getMonth() + 1) : CorrDate._d.getMonth()+1) + ' ' + (CorrDate._d.getHours() < 10 ? '0' + CorrDate._d.getHours() : CorrDate._d.getHours())+ ':' + (CorrDate._d.getMinutes() < 10 ? '0' + CorrDate._d.getMinutes() : CorrDate._d.getMinutes());
-       //reg.push({title: 'Новая запись', start:arg.date, end: CorrDate._d ,backgroundColor: '#222b80'});
-        console.log(reg);
-         //this.setState(reg);
-        this.setState({calendarEvents:[ {title: 'Новая запись', start:arg.date, end: CorrDate._d ,backgroundColor: '#222b80'}]})
-        //console.log(ForData);
-
-    };
-
-    handleEventClick = (arg) => {
-        console.log(arg.event.start);
     };
 
     change = (e) => {
@@ -80,28 +73,21 @@ class App extends Component {
         this.setState({[name]: value})
     };
 
-    businessHours = {
-        daysOfWeek: [1, 2, 3, 4, 5], // Monday - Thursday
-        startTime: '8:00', // a start time (10am in this example)
-        endTime: '18:00', // an end time (6pm in this example)
-    }
+
 
     render() {
 
         let SecItem;
         let DocItem;
-        let DateTile;
         let FelialItem = data.felials.map(d => <option key={d.id} value={d.id}>{d.name} </option>);
-
+        //Проверка введеных данных и вывод с условием
         this.state.felial ? SecItem = data.felials[this.state.felial].sections.map(d => <option key={d.id}
                                                                                                 value={d.id}>{d.name} </option>) : SecItem = '';
 
-
+        //Проверка введеных данных и вывод с условием
         this.state.section && this.state.felial ? DocItem = data.felials[this.state.felial].sections[this.state.section].doctors.map(d =>
             <option key={d.id} value={d.id}>{d.name} </option>) : DocItem = '';
 
-        //Не работает ,пытаюсь вытащить дни, вылит ошибки
-        //this.state.section && this.state.felial && this.state.doctor  ? DateTile = data.felials[this.state.felial].sections[this.state.section].doctors[this.state.doctor].maxDate :DateTile = '';
 
         return (
             <div className="App">
@@ -146,6 +132,7 @@ class App extends Component {
                         </select>
                     </div>
                     <div>
+
                         <FullCalendar
                             locale="ru"
                             locales={[ruLocale]}
@@ -156,19 +143,16 @@ class App extends Component {
                                 center: 'title',
                                 right: 'timeGridWeek,timeGridDay'
                             }}
-                            ref={this.calendarComponentRef}
-                            weekends={this.state.calendarWeekends}
-                            events={this.state.calendarEvents}
+                            ref={this.calendarComponentRef}//Без поняти что это, см.стр.52
+                            weekends={this.state.calendarWeekends}//Отображать ли выходные, в стейт внесен true , так то воск. убирается на стр.155 и это можно удолить
                             dateClick={this.handleDateClick}
-                            eventClick={this.handleEventClick}
-                            businessHours={this.businessHours}
+                            events={this.state.calendarEvents}//Принемает массив с записями
                             minTime='8:00'
                             maxTime='18:00'
-                            minTime='8:00'
                             updateSize
                             contentHeight="auto"
-                            slotDuration='00:15:00'
-                            selectConstraint='2020-03-02 10:30'
+                            slotDuration='00:15:00'//Дни раздерены на интервалы по 15 минут
+                            hiddenDays={[0]} //Исключение воскресенья
                         />
 
 
