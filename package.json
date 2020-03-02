@@ -1,19 +1,28 @@
 {
-  "name": "myproect2",
+  "name": "aaaaaaa",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@fullcalendar/core": "^4.4.0",
     "@fullcalendar/daygrid": "^4.4.0",
-    "@fullcalendar/react": "^4.4.0",
     "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.4.1",
-    "@testing-library/user-event": "^7.2.1",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
     "react": "^16.13.0",
-    "react-calendar": "^2.19.2",
-    "react-datepicker": "^2.13.0",
     "react-dom": "^16.13.0",
-    "react-scripts": "3.4.0"
+    "react-scripts": "3.4.0",
+    "@fullcalendar/timegrid": "latest",
+    "@fullcalendar/react": "latest",
+    "@fullcalendar/interaction": "latest",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "momentjs": "^2.0.0",
+    "node-sass": "^4.13.1",
+    "prettier": "^1.19.1",
+    "react-is": "^16.12.0",
+    "react-phone-number-input": "^3.0.13",
+    "styled-components": "^5.0.0",
+    "typescript": "^3.7.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -37,19 +46,12 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "^7.4.0",
-    "@babel/plugin-proposal-class-properties": "^7.0.0",
-    "@babel/plugin-proposal-export-namespace-from": "^7.0.0",
-    "@babel/plugin-proposal-throw-expressions": "^7.0.0",
-    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
-    "@babel/preset-env": "^7.0.0-beta.51",
-    "@babel/preset-react": "^7.0.0-beta.51",
-    "babel-loader": "^8.0.0-beta.0",
-    "css-loader": "^3.0.0",
-    "node-sass": "^4.8.3",
-    "sass-loader": "^7.0.3",
-    "style-loader": "^0.21.0",
-    "webpack": "^4.12.0",
-    "webpack-cli": "^3.3.0"
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.18.0",
+    "eslint-plugin-react-hooks": "^1.7.0"
   }
 }
