@@ -1,196 +1,402 @@
 {
-  "felials": [
-    {
-      "name": "г. Сыктывкар,ул.Орджоникидзе,д .33 / 45 ",
+  "felials": [{
+    "name": "г. Сыктывкар,ул.Орджоникидзе,д .33 / 45",
+    "id": "0",
+    "sections": [{
+      "name": "Узи исследования",
       "id": "0",
-      "sections": [
-        {
-          "name": "Узи исследования",
+      "doctors": [{
+        "name": "Гилибранд Л.А.",
+        "id": "0",
+        "maxDate": "2012-06-04",
+        "minDate": "2012-05-29 ",
+        "minTime": "10:00",
+        "maxTime": "18:00",
+        "hidden": [0, 1],
+        "event": [{
+          "id_doc": "0",
+          "name": "Name1",
           "id": "0",
-          "doctors": [
-            {
-              "name": "Гилибранд Л.А.",
-              "id": "0",
-              "maxDate": "2012-06-04",
-              "minDate": "2012-05-29 ",
-              "minTime": "10:00",
-              "maxTime": "18:00",
-              "event": [
-                {
-                  "id_doc": "0",
-                  "name": "Name1",
-                  "id": "0",
-                  "sname": "Sname1",
-                  "fname": "Fname1",
-                  "start": "2020-03-03 11:00",
-                  "end": "2020-03-03 11:15"
-                },
-                {
-                  "id_doc": "0",
-                  "name": "Name2",
-                  "id": "1",
-                  "sname": "Sname2",
-                  "fname": "Fname2",
-                  "start": "2020-03-03 13:30",
-                  "end": "2020-03-03 13:45"
-                }
-              ]
-            },
-            {
-              "name": "Заузолкова М.Е.",
-              "id": "1",
-              "maxDate": "2012-06-04",
-              "minDate": "2012-05-29 ",
-              "minTime": "11:00",
-              "maxTime": "18:00",
-              "event": [
-                {
-                  "id_doc": "1",
-                  "name": "Name1",
-                  "id": "0",
-                  "sname": "Sname1",
-                  "fname": "Fname1",
-                  "start": "2020-03-03 12:00",
-                  "end": "2020-03-03 12:15"
-                },
-                {
-                  "id_doc": "1",
-                  "name": "Name2",
-                  "id": "1",
-                  "sname": "Sname2",
-                  "fname": "Fname2",
-                  "start": "2020-03-03 08:30",
-                  "end": "2020-03-03 08:45"
-                }
-              ]
-            },
-            {
-              "name": "Платицына А.С",
-              "id": "2",
-              "maxDate": "2012-06-04",
-              "minDate": "2012-05-29 ",
-              "minTime": "12:00",
-              "maxTime": "18:00"
-            },
-            {
-              "name": "Гусаров М.Ю.",
-              "id": "3",
-              "maxDate": "2012-06-04",
-              "minDate": "2012-05-29 ",
-              "minTime": "8:00",
-              "maxTime": "14:00"
-            }
-          ]
+          "sname": "Sname1",
+          "fname": "Fname1",
+          "start": "2020-03-03 11:00",
+          "end": "2020-03-03 11:15"
         },
+          {
+            "id_doc": "0",
+            "name": "Name2",
+            "id": "1",
+            "sname": "Sname2",
+            "fname": "Fname2",
+            "start": "2020-03-03 13:30",
+            "end": "2020-03-03 13:45"
+          }
+        ]
+      },
         {
-          "name": "Прием врача гинеколога",
+          "name": "Заузолкова М.Е.",
           "id": "1",
-          "doctors": [
+          "maxDate": "2012-06-04",
+          "minDate": "2012-05-29 ",
+          "minTime": "11:00",
+          "maxTime": "18:00",
+          "hidden": [0, 4],
+          "event": [{
+            "id_doc": "1",
+            "name": "Name1",
+            "id": "0",
+            "sname": "Sname1",
+            "fname": "Fname1",
+            "start": "2020-03-03 12:00",
+            "end": "2020-03-03 12:15"
+          },
             {
-              "name": "Литвинович Т.В.",
-              "id": "0",
-              "maxDate": "2012-06-04",
-              "minDate": "2012-05-29 ",
-              "minTime": "11:00",
-              "maxTime": "13:00"
-            },
-            {
-              "name": "Никишин В.А.",
+              "id_doc": "1",
+              "name": "Name2",
               "id": "1",
-              "maxDate": "2012-06-04",
-              "minDate": "2012-05-29 ",
-              "minTime": "13:00",
-              "maxTime": "16:00"
-            },
-            {
-              "name": "Еремина Ю.Б.",
-              "id": "2",
-              "maxDate": "2012-06-04",
-              "minDate": "2012-05-29 ",
-              "minTime": "16:00",
-              "maxTime": "18:00"
+              "sname": "Sname2",
+              "fname": "Fname2",
+              "start": "2020-03-03 12:30",
+              "end": "2020-03-03 12:45"
             }
           ]
         },
         {
-          "name": "Прием онколога",
+          "name": "Платицына А.С",
           "id": "2",
-          "doctors": [
+          "maxDate": "2012-06-04",
+          "minDate": "2012-05-29 ",
+          "minTime": "12:00",
+          "maxTime": "18:00",
+          "hidden": [0],
+          "event": [{
+            "id_doc": "2",
+            "name": "Name1",
+            "id": "0",
+            "sname": "Sname1",
+            "fname": "Fname1",
+            "start": "2020-03-03 12:00",
+            "end": "2020-03-03 12:15"
+          },
             {
-              "name": "Сауткин Д.В.",
-              "id": "0",
-              "maxDate": "2012-06-04",
-              "minDate": "2012-05-29 ",
-              "minTime": "9:00",
-              "maxTime": "18:00"
-            }
-          ]
-        },
-        {
-          "name": "Прием терапевта",
-          "id": "3",
-          "doctors": [
-            {
-              "name": "Плюснина И.Н.",
-              "id": "0",
-              "maxDate": "2012-06-04",
-              "minDate": "2012-05-29 ",
-              "minTime": "10:00",
-              "maxTime": "18:00"
-            }
-          ]
-        },
-        {
-          "name": "Прием гастроэнтеролога",
-          "id": "4",
-          "doctors": [
-            {
-              "name": "Гурылева Е.Н.",
-              "id": "0",
-              "maxDate": "2012-06-04",
-              "minDate": "2012-05-29 ",
-              "minTime": "13:00",
-              "maxTime": "16:00"
-            },
-            {
-              "name": "Плюснина И.Н.",
+              "id_doc": "2",
+              "name": "Name2",
               "id": "1",
-              "maxDate": "2012-06-04",
-              "minDate": "2012-05-29 ",
-              "minTime": "8:00",
-              "maxTime": "13:00"
+              "sname": "Sname2",
+              "fname": "Fname2",
+              "start": "2020-03-03 13:45",
+              "end": "2020-03-03 14:00"
             }
           ]
         },
         {
-          "name": "Прием кардиолога",
-          "id": "5",
-          "doctors": [
+          "name": "Гусаров М.Ю.",
+          "id": "3",
+          "maxDate": "2012-06-04",
+          "minDate": "2012-05-29 ",
+          "minTime": "8:00",
+          "maxTime": "14:00",
+          "hidden": [0, 5],
+          "event": [{
+            "id_doc": "3",
+            "name": "Name1",
+            "id": "0",
+            "sname": "Sname1",
+            "fname": "Fname1",
+            "start": "2020-03-03 12:00",
+            "end": "2020-03-03 12:15"
+          },
             {
-              "name": "Мишенева Е.А",
-              "id": "0",
-              "maxDate": "2012-06-04",
-              "minDate": "2012-05-29 ",
-              "minTime": "8:30",
-              "maxTime": "16:30"
-            }
-          ]
-        },
-        {
-          "name": "Прием сомнолога",
-          "id": "6",
-          "doctors": [
-            {
-              "name": "Габова Е.В.",
-              "id": "0",
-              "maxDate": "2012-06-04",
-              "minDate": "2012-05-29 ",
-              "minTime": "10:00",
-              "maxTime": "18:00"
+              "id_doc": "3",
+              "name": "Name2",
+              "id": "1",
+              "sname": "Sname2",
+              "fname": "Fname2",
+              "start": "2020-03-03 13:30",
+              "end": "2020-03-03 13:45"
             }
           ]
         }
       ]
-    }
-  ]
+    },
+      {
+        "name": "Прием врача гинеколога",
+        "id": "1",
+        "doctors": [{
+          "name": "Литвинович Т.В.",
+          "id": "0",
+          "maxDate": "2012-06-04",
+          "minDate": "2012-05-29 ",
+          "minTime": "11:00",
+          "maxTime": "13:00",
+          "hidden": [0],
+          "event": [{
+            "id_doc": "0",
+            "name": "Name1",
+            "id": "0",
+            "sname": "Sname1",
+            "fname": "Fname1",
+            "start": "2020-03-03 10:00",
+            "end": "2020-03-03 10:15"
+          },
+            {
+              "id_doc": "0",
+              "name": "Name2",
+              "id": "1",
+              "sname": "Sname2",
+              "fname": "Fname2",
+              "start": "2020-03-03 12:30",
+              "end": "2020-03-03 12:45"
+            }
+          ]
+        },
+          {
+            "name": "Никишин В.А.",
+            "id": "1",
+            "maxDate": "2012-06-04",
+            "minDate": "2012-05-29 ",
+            "minTime": "13:00",
+            "maxTime": "16:00",
+            "hidden": [0, 1, 2],
+            "event": [{
+              "id_doc": "1",
+              "name": "Name1",
+              "id": "0",
+              "sname": "Sname1",
+              "fname": "Fname1",
+              "start": "2020-03-03 13:00",
+              "end": "2020-03-03 13:15"
+            },
+              {
+                "id_doc": "1",
+                "name": "Name2",
+                "id": "1",
+                "sname": "Sname2",
+                "fname": "Fname2",
+                "start": "2020-03-03 13:30",
+                "end": "2020-03-03 13:45"
+              }
+            ]
+          },
+          {
+            "name": "Еремина Ю.Б.",
+            "id": "2",
+            "maxDate": "2012-06-04",
+            "minDate": "2012-05-29 ",
+            "minTime": "16:00",
+            "maxTime": "18:00",
+            "hidden": [0, 3],
+            "event": [{
+              "id_doc": "2",
+              "name": "Name1",
+              "id": "0",
+              "sname": "Sname1",
+              "fname": "Fname1",
+              "start": "2020-03-03 16:00",
+              "end": "2020-03-03 16:15"
+            },
+              {
+                "id_doc": "2",
+                "name": "Name2",
+                "id": "1",
+                "sname": "Sname2",
+                "fname": "Fname2",
+                "start": "2020-03-03 17:30",
+                "end": "2020-03-03 17:45"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Прием онколога",
+        "id": "2",
+        "doctors": [{
+          "name": "Сауткин Д.В.",
+          "id": "0",
+          "maxDate": "2012-06-04",
+          "minDate": "2012-05-29 ",
+          "minTime": "9:00",
+          "maxTime": "18:00",
+          "hidden": [0, 4],
+          "event": [{
+            "id_doc": "0",
+            "name": "Name1",
+            "id": "0",
+            "sname": "Sname1",
+            "fname": "Fname1",
+            "start": "2020-03-03 13:00",
+            "end": "2020-03-03 13:15"
+          },
+            {
+              "id_doc": "0",
+              "name": "Name2",
+              "id": "1",
+              "sname": "Sname2",
+              "fname": "Fname2",
+              "start": "2020-03-03 14:30",
+              "end": "2020-03-03 14:45"
+            }
+          ]
+        }]
+      },
+      {
+        "name": "Прием терапевта",
+        "id": "3",
+        "doctors": [{
+          "name": "Плюснина И.Н.",
+          "id": "0",
+          "maxDate": "2012-06-04",
+          "minDate": "2012-05-29 ",
+          "minTime": "10:00",
+          "maxTime": "18:00",
+          "hidden": [0],
+          "event": [{
+            "id_doc": "0",
+            "name": "Name1",
+            "id": "0",
+            "sname": "Sname1",
+            "fname": "Fname1",
+            "start": "2020-03-03 13:10",
+            "end": "2020-03-03 13:25"
+          },
+            {
+              "id_doc": "0",
+              "name": "Name2",
+              "id": "1",
+              "sname": "Sname2",
+              "fname": "Fname2",
+              "start": "2020-03-03 14:30",
+              "end": "2020-03-03 14:45"
+            }
+          ]
+        }]
+      },
+      {
+        "name": "Прием гастроэнтеролога",
+        "id": "4",
+        "doctors": [{
+          "name": "Гурылева Е.Н.",
+          "id": "0",
+          "maxDate": "2012-06-04",
+          "minDate": "2012-05-29 ",
+          "minTime": "13:00",
+          "maxTime": "16:00",
+          "hidden": [0, 1],
+          "event": [{
+            "id_doc": "0",
+            "name": "Name1",
+            "id": "0",
+            "sname": "Sname1",
+            "fname": "Fname1",
+            "start": "2020-03-03 14:00",
+            "end": "2020-03-03 14:15"
+          },
+            {
+              "id_doc": "0",
+              "name": "Name2",
+              "id": "1",
+              "sname": "Sname2",
+              "fname": "Fname2",
+              "start": "2020-03-03 14:30",
+              "end": "2020-03-03 14:45"
+            }
+          ]
+        },
+          {
+            "name": "Плюснина И.Н.",
+            "id": "1",
+            "maxDate": "2012-06-04",
+            "minDate": "2012-05-29 ",
+            "minTime": "8:00",
+            "maxTime": "13:00",
+            "hidden": [0, 1, 3],
+            "event": [{
+              "id_doc": "1",
+              "name": "Name1",
+              "id": "0",
+              "sname": "Sname1",
+              "fname": "Fname1",
+              "start": "2020-03-03 11:00",
+              "end": "2020-03-03 11:15"
+            },
+              {
+                "id_doc": "1",
+                "name": "Name2",
+                "id": "1",
+                "sname": "Sname2",
+                "fname": "Fname2",
+                "start": "2020-03-03 12:30",
+                "end": "2020-03-03 12:45"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Прием кардиолога",
+        "id": "5",
+        "doctors": [{
+          "name": "Мишенева Е.А",
+          "id": "0",
+          "maxDate": "2012-06-04",
+          "minDate": "2012-05-29 ",
+          "minTime": "8:30",
+          "maxTime": "16:30",
+          "hidden": [0],
+          "event": [{
+            "id_doc": "0",
+            "name": "Name1",
+            "id": "0",
+            "sname": "Sname1",
+            "fname": "Fname1",
+            "start": "2020-03-03 12:00",
+            "end": "2020-03-03 12:15"
+          },
+            {
+              "id_doc": "0",
+              "name": "Name2",
+              "id": "1",
+              "sname": "Sname2",
+              "fname": "Fname2",
+              "start": "2020-03-03 14:40",
+              "end": "2020-03-03 14:55"
+            }
+          ]
+        }]
+      },
+      {
+        "name": "Прием сомнолога",
+        "id": "6",
+        "doctors": [{
+          "name": "Габова Е.В.",
+          "id": "0",
+          "maxDate": "2012-06-04",
+          "minDate": "2012-05-29 ",
+          "minTime": "10:00",
+          "maxTime": "18:00",
+          "hidden": [0, 3, 4],
+          "event": [{
+            "id_doc": "0",
+            "name": "Name1",
+            "id": "0",
+            "sname": "Sname1",
+            "fname": "Fname1",
+            "start": "2020-03-03 13:00",
+            "end": "2020-03-03 13:15"
+          },
+            {
+              "id_doc": "0",
+              "name": "Name2",
+              "id": "1",
+              "sname": "Sname2",
+              "fname": "Fname2",
+              "start": "2020-03-03 14:30",
+              "end": "2020-03-03 14:45"
+            }
+          ]
+        }]
+      }
+    ]
+  }]
 }
