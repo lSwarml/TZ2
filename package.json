@@ -14,7 +14,7 @@
     "@fullcalendar/timegrid": "latest",
     "@fullcalendar/react": "latest",
     "@fullcalendar/interaction": "latest",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "moment": "^2.24.0",
     "momentjs": "^2.0.0",
     "node-sass": "^4.13.1",
