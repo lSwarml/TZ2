@@ -15,7 +15,7 @@
     "@fullcalendar/react": "latest",
     "@fullcalendar/interaction": "latest",
     "lodash": "^4.17.15",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "momentjs": "^2.0.0",
     "node-sass": "^4.13.1",
     "prettier": "^1.19.1",
